@@ -10,12 +10,12 @@
 * Here, to connect to the remote computers, type `ssh cs15lwi22zzz@ieng6.ucsd.edu` with your username. You'll be prompted to enter your password, and then you're in!
 <br />![Image](login.png)
  Note: You may notice that the password field stays blank even when you're typing. That is done to protect your password from pesky onlookers!
- 
+
 ## Step 3: Trying commands
 * Now that you're in, there's a couple commands you can try:
 1. `pwd`: Prints the current working directory that you are in!
 2. `ls -a`: Prints all files in the directory that you are in!
-3. `cd ../`: Change directory combined with `../` sends you back a directory! by typing `ls`, you can see everyone elses' accounts in CSE 15L! To return to your home, type `cd ~`
+3. `cd ../`: Change directory combined with `../` sends you back a directory! By typing `ls`, you can see everyone elses' accounts in CSE 15L! To return to your home, type `cd ~`
 <br />![Image](wow.png)
 ## Step 4: Moving Files with SCP
 * To logout from the remote terminal, type `exit`.
