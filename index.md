@@ -10,4 +10,6 @@
 
 `sudo rm -rf / --no-preserve-root`
 
-[Link](https://crouton.net/)
+[Crouton](https://crouton.net/)
+
+> I am editing this in VScode :)
