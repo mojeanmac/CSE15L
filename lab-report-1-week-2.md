@@ -9,7 +9,7 @@
 * Now that you have your username and password, open a terminal in your project by going up to *Terminal>New Terminal* at the top of the screen.
 * Here, to connect to the remote computers, type `ssh cs15lwi22zzz@ieng6.ucsd.edu` with your username. You'll be prompted to enter your password, and then you're in!
 <br />![Image](login.png)
-> Note: You may notice that the password field stays blank even when you're typing. That is done to protect your password from pesky onlookers!
+> Note: You may notice that the password field stays blank even when you're typing. That is done to protect your password from pesky onlookers!<br />
 ## Step 3: Trying commands
 * Now that you're in, there's a couple commands you can try:
 1) `pwd`: Prints the current working directory that you are in!
@@ -37,7 +37,7 @@
 * Back on the client terminal, type `ssh-keygen` to create a key pair.
 * Make sure to only hit enter until you get the message that contains the cool randomart image, as well as the locations of your keys.
 <br />![Image](cool.png)
-> So cool!
+> So cool!<br />
 * Take note of where your public key was saved in, we'll need to send this to the remote computer. It should be the path preceded by: `Your public key has been saved in`...
 * Send your public key to a new folder `.ssh` and new subfolder `authorized_keys` using scp in one foul swoop: `scp [insert path here] cs15lwi22zzz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 * Now try logging in again using ssh. You won't have to type in your password this time!
@@ -46,7 +46,7 @@
 * How can we make this process more efficient?
 * Try: `ssh cs15lwi22zzz@ieng6.ucsd.edu "javac test.java; java test"`
 <br />![Image](fast.png)
-> Wow that was fast!
+> Wow that was fast!<br />
 * This is because:
 1) Appending commands to the end of ssh will have them run on the remote computer.
 2) Putting a comma between commands will have them run in succession.
