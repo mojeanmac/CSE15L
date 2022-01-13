@@ -1,2 +1,11 @@
-Hello, world!
-![cute_kitty](https://user-images.githubusercontent.com/26077246/149396119-befd876c-e081-462a-9526-02b3732710ed.jpg)
+# Hello, world!
+
+![Totally not suspicious shoob homepage](https://user-images.githubusercontent.com/26077246/149396565-2eba72d5-5fff-4008-9412-fffddc3015e8.png)
+
+* One
+* Two
+* Three
+* Four
+* Five
+
+`sudo rm -rf / --no-preserve-root`
