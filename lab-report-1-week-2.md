@@ -9,7 +9,8 @@
 * Now that you have your username and password, open a terminal in your project by going up to *Terminal>New Terminal* at the top of the screen.
 * Here, to connect to the remote computers, type `ssh cs15lwi22zzz@ieng6.ucsd.edu` with your username. You'll be prompted to enter your password, and then you're in!
 <br />![Image](login.png)
-> Note: You may notice that the password field stays blank even when you're typing. That is done to protect your password from pesky onlookers! </blockquote>
+ Note: You may notice that the password field stays blank even when you're typing. That is done to protect your password from pesky onlookers!
+ 
 ## Step 3: Trying commands
 * Now that you're in, there's a couple commands you can try:
 1. `pwd`: Prints the current working directory that you are in!
