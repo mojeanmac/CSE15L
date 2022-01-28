@@ -10,13 +10,13 @@
     }
 ```
 * Now each test correctly prints an empty array, except test 8 which correctly prints the one complete item.
-![Image](fix1.jpg)
+![Image](actualfix1.jpg)
 * DIFF LOG:
 ![Image](git1.jpg)
 ## Fix 2: Images shown as links
 * SYMPTOM: Testing [test2.md](https://github.com/mojeanmac/markdown-parse/blob/main/test2.md) resulted in including the link to an image in the printed array, which we don't want.
 ![Image](error2.jpg)
-* THE BUG: The program only checks for open and closed brackets and parenthesis, ignoring everything in between. This includes the "!" tag for images.
+* THE BUG: The program only checks for open and closed brackets and parenthesis, ignoring everything else. This includes the "!" tag for images.
 * FIXING THE BUG: Whenever "!" is found, the link is skipped by changing the current index to after the link and the while loop continues.
 ```
     if ((nextOpenBracket != 0 && markdown.charAt(nextOpenBracket - 1) == '!')){
@@ -34,7 +34,7 @@
 * SYMPTOM: Additional tests [test3.md](https://github.com/mojeanmac/markdown-parse/blob/main/test-file3.md) and [test4.md](https://github.com/mojeanmac/markdown-parse/blob/main/test4.md) focus on these issues and print the incorrect links instead of empty arrays, which fail the testers.
 ![Image](error3.jpg)
 * THE BUG: The program skips over any text between the [] and (), as well as ignoring any spaces within the ().
-* FIXING THE BUG: By making sure the index directly after the closed bracket is an open paranthesis, as well as verifying that there are no spaces in the substring between the parenthesis, we can fix both of these issues at once by adding them to the same if statement as the image skipper.
+* FIXING THE BUG: By making sure the index directly after the closed bracket is an open paranthesis, as well as verifying that there are no spaces in the substring between the parenthesis, we can fix both of these issues at once by adding them to the same if statement as the image skipper in the previous step.
 ```
     if ((nextOpenBracket != 0 && markdown.charAt(nextOpenBracket - 1) == '!') ||
     nextCloseBracket + 1 != openParen ||
