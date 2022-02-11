@@ -12,7 +12,7 @@
 * After sshing back to my ieng6 account, I can see that the markdown-parse folder has been created (I previously removed the github cloned version).
 
 ![Image](a3.png)
-* I change directories into repo and it runs correctly!
+* I change directories into the repo folder and it runs correctly!
 
 ## Show (like in the last step of the first lab) combining `scp`, `;`, and `ssh` to copy the whole directory and run the tests in one line.
 
