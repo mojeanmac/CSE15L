@@ -15,3 +15,8 @@
 * I change directories into repo and it runs correctly!
 
 ## Show (like in the last step of the first lab) combining `scp`, `;`, and `ssh` to copy the whole directory and run the tests in one line.
+
+![Image](a4.png)
+
+* Because of the different java versions, it became more difficult to manage the specific files to send and run on the same line.
+* Time management-wise, it becomes more efficient to send and connect via ssh on one line, and then navigate, run, and compile on another line after connecting.
