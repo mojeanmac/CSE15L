@@ -12,16 +12,23 @@
 
 [Foo*bar\]]
 ```
+View the file [here](194.html)
 ![Image](03.png)
-- Which implementation is correct?
-
-- Describe the bug:
-
-## Test 2:
+Which implementation is correct?
+- It appears that neither is correct according to VScode's implementation:
+![Image](05.png)
+Describe the bug:
+- According to [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/), a link title can be contained by wrapping them in singe quotes (`'`) if the brackets are followed by a colon (`:`)
+- This means that the actual link should be `my_(url)`
+- To fix this, we would need to account for these types of links by checking for a colon after the brackets and finding the link before the bounds of the link title
+## Test 2: 496.md
 ```
 [link](foo(and(bar))
 ```
+View the file [here](496.html)
 ![Image](04.png)
-- Which implementation is correct?
+Which implementation is correct?
+- Joe's implementation is correct because no links are found by VScode:
+![Image](06.png)
 
-- Describe the bug:
+Describe the bug:
