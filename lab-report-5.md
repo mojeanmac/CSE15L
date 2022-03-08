@@ -19,12 +19,12 @@
 
 ![Image](03.png)
 
-1. Which implementation is correct?
+### Which implementation is correct?
 - It appears that neither is correct according to VScode's implementation:
 
 ![Image](05.png)
 
-2. Describe the bug:
+### Describe the bug:
 - According to this section on [markdownguide.org](https://www.markdownguide.org/basic-syntax/#formatting-the-first-part-of-the-link), a link title can be created by wrapping it in singe quotes (`'`) if the brackets are followed by a colon (`:`)
 - This means that the actual link should be `my_(url)`
 - To fix this, we would need to account for these types of links by checking for a colon after the brackets and finding the link before the bounds of the link title.
@@ -39,12 +39,12 @@
 
 ![Image](04.png)
 
-1. Which implementation is correct?
+### Which implementation is correct?
 
 - Joe's implementation is correct because no links are found by VScode:
 
 ![Image](06.png)
 
-2. Describe the bug:
+### Describe the bug:
 - My code does not account for an uneven number of parenthesis. In this test, there are 3 open and 2 closed parenthesis, which markdown does not like!
 - To fix this, I would either change the way I look for parenthesis so that it matches the way Joe implemented, or create two counters for open and closed parenthesis to check if there is an uneven amount. If there is, then do not include the link.
