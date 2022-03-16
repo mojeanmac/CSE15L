@@ -28,7 +28,14 @@
 - According to this section on [markdownguide.org](https://www.markdownguide.org/basic-syntax/#formatting-the-first-part-of-the-link), a link title can be created by wrapping it in singe quotes (`'`) if the brackets are followed by a colon (`:`)
 - This means that the actual link should be `my_(url)`
 - To fix this, we would need to account for these types of links by checking for a colon after the brackets and finding the link before the bounds of the link title.
+
 - Additionally, the way that Github Pages displays this file as an [html page](194.html) is with **no links**, indicating that my implementation (the first one) is correct! It really depends what platform you deem "correct" to decide how to move forward.
+
+### Code segment to fix:
+
+![Image](0fix.png)
+
+- Before this if statement in my code, I would make a case that checks for a semicolon between `nextCloseBracket` and `openParen` so that it adresses the link creation differently.
 
 ## Test 2: 496.md
 ```
@@ -48,3 +55,9 @@
 ### Describe the bug:
 - My code does not account for an uneven number of parenthesis. In this test, there are 3 open and 2 closed parenthesis, which markdown does not like!
 - To fix this, I would either change the way I look for parenthesis so that it matches the way our instructor implemented, or create two counters for open and closed parenthesis to check if there is an uneven amount. If there is, then do not include the link.
+
+### Code segment to fix:
+
+![Image](0fix2.png)
+
+- I only check for the existence of the very first open parenthesis and close parenthesis in the line. Therefore, I should create an if statement before these lines that checks if the number of open and close parenthesis is equal to decide if the link should be returned or not.
